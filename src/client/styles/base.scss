@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 2;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.right{
+    background-color: rgb(255, 201, 201);
+    padding: 30px;
+    font-size: 18px;
+}
+
+
+.outputText, .polarity, .subjectivity{
+    padding: 10px;
+}
+
+.outputText::before{
+    content: "Text : ";
+    font-weight: bolder;
+}
+.polarity::before{
+    content: "Polarity : ";
+    font-weight: bolder;
+}
+.subjectivity::before{
+    content: "Subjectivity : ";
+    font-weight: bolder;
+}
