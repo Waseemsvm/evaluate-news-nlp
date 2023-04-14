@@ -1,5 +1,10 @@
 import { validate } from "./validator";
 
+/**
+ * @description function that handles the form submit event, prevents the default event, validates the input and updates the dom with proper output
+ * @param {Event} event 
+ * @returns 
+ */
 function handleSubmit(event) {
     event.preventDefault()
 
